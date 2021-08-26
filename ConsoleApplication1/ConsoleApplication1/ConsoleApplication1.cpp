@@ -19,12 +19,12 @@ int main()
 	}
 
 	time_t now = time(0);
-	size_t size = 34;
-	char* dt = ctime(&now);
-
+	tm* ltm = localtime(&now);
+	const char* localtime;
+	ato
 	sf::Text text;
 	text.setFont(font);
-	text.setString(dt);
+	text.setString();
 	text.setCharacterSize(24);
 	text.setFillColor(Color::White);
 
